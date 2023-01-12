@@ -25,3 +25,11 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication();
+
+//app.MapAreaControllerRoute(
+  //  name: "default",
+    //pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
